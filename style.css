@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #498feb;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.calendar {
+    background: #fff;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.calendar header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 10px;
+}
+
+.calendar header .calendar_navigation {
+    display: flex;
+}
+
+.calendar header .calendar_navigation .navigation {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+    color: #aeabab;
+    font-size: 20px;
+}
+
+.calendar header .calendar_navigation .navigation:hover {
+    background: #f1f1f1;
+}
+
+.calendar header .calendar_navigation .navigation:last-child {
+    margin-right: -10px;
+}
+
+.calendar header .calendar_data {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar .calendar_body {
+    padding: 20px;
+}
+
+.calendar .calendar_body ul {
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+}
+
+.calendar .calendar_body ul.calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar .calendar_body ul.calendar-weekdays li {
+    font-weight: 500;
+}
+
+.calendar .calendar_body .calendar_dates {
+    margin-bottom: 20px;
+}
+
+.calendar .calendar_body li {
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+    color: #414141;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calendar .calendar_body .calendar_dates li.date {
+    background-color: #498feb;
+    border-radius: 30%;
+}
+
+.calendar .calendar_body .calendar_dates li.inactive {
+    color: #aaa;
+}
+
+.calendar .calendar_body .calendar_dates li.active {
+    color: #fff;
+}
+
+.calendar .calendar_body .calendar_dates li::before {
+    background: #f1f1f1;
+}
+
+.calendar .calendar_body .calendar_dates li:not(.active):hover::before {
+    background: #f1f1f1;
+}
+
+.calendar .calendar_body .calendar_dates li.blue{
+    color: #00c6ed;
+}
+
+.calendar .calendar_body .calendar_dates li.red {
+    color: #c30202;
+}
+
+
